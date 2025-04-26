@@ -41,7 +41,7 @@ int main() {
     if (found) {
         cout << "So lon nhat chia het cho 3 la: " << maxDiv3 << endl;
     } else {
-        cout << "khong co\n";
+        cout << "Khong co\n";
     }
 
     return 0;
