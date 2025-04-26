@@ -15,15 +15,15 @@ int main() {
     int N;
     
     
-    cout << "Nhập số nguyên dương N: ";
+    cout << "Nhap so nguyen dương N: ";
     cin >> N;
 
     if (N <= 2) {
-        cout << "Không có số nguyên tố nào nhỏ hơn " << N << endl;
+        cout << "Khong co so nguyen to nao nho hon " << N << endl;
         return 0;
     }
 
-    cout << "Các số nguyên tố nhỏ hơn " << N << " là: ";
+    cout << "Cac so nguyen to nho hon " << N << " là: ";
     
  
     for (int i = 2; i < N; i++) {
