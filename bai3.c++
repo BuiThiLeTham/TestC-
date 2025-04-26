@@ -13,11 +13,24 @@ void nhapSV(SinhVien &sv) {
     cin.ignore(); 
     getline(cin, sv.ten);
     
-    cout << "Nhap diem Toan: "; cin >> sv.toan;
-    cout << "Nhap diem Ly: "; cin >> sv.ly;
-    cout << "Nhap diem Hoa: "; cin >> sv.hoa;
+    do {
+        cout << "Nhap diem Toan (0-10): "; 
+        cin >> sv.toan;
+        if (sv.toan < 0 || sv.toan > 10) cout << "Diem khong hop le! Nhap lai.\n";
+    } while (sv.toan < 0 || sv.toan > 10);
+    
+    do {
+        cout << "Nhap diem Ly (0-10): "; 
+        cin >> sv.ly;
+        if (sv.ly < 0 || sv.ly > 10) cout << "Diem khong hop le! Nhap lai.\n";
+    } while (sv.ly < 0 || sv.ly > 10);
 
-  
+    do {
+        cout << "Nhap diem Hoa (0-10): "; 
+        cin >> sv.hoa;
+        if (sv.hoa < 0 || sv.hoa > 10) cout << "Diem khong hop le! Nhap lai.\n";
+    } while (sv.hoa < 0 || sv.hoa > 10);
+
     sv.diemTB = (sv.toan + sv.ly + sv.hoa) / 3;
 }
 
@@ -36,7 +49,6 @@ int main() {
 
     SinhVien ds[n];
 
-    
     for (int i = 0; i < n; ++i) {
         cout << "\nNhap thong tin sinh vien thu " << i + 1 << ":\n";
         nhapSV(ds[i]);

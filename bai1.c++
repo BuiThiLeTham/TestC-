@@ -19,7 +19,7 @@ int main() {
     cin >> N;
 
     if (N <= 2) {
-        cout << "Khong co so nguyen to nao nho hon " << N << endl;
+        cout << "Khong co so nguyen to ";
         return 0;
     }
 

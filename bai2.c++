@@ -26,6 +26,7 @@ int main() {
         cin >> arr[i];
     }
 
+
     int maxDiv3 = -1e9;
     bool found = false;
 
@@ -38,11 +39,13 @@ int main() {
         }
     }
 
+
     if (found) {
         cout << "So lon nhat chia het cho 3 la: " << maxDiv3 << endl;
     } else {
         cout << "Khong co\n";
     }
+
 
     return 0;
 }
