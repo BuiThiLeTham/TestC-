@@ -15,8 +15,7 @@ int main() {
 
     set<int> tapGiaTri;
     for (int i = 0; i < n; i++) {
-        tapGiaTri.insert(a[i]); // set sẽ tự loại bỏ giá trị trùng
-    }
+        tapGiaTri.insert(a[i]);
    
 
     cout << "So luong gia tri phan biet la: " << tapGiaTri.size() << endl;
